@@ -13,14 +13,27 @@ public class Main {
          arrayList.add("Rush");
          arrayList.add("Nissan");
 
-        //For each
-         for (Object ar:arrayList) {
-            System.out.println("Item " + ar);
-        }
+         arrayList.remove(0);
+         arrayList.add(0,"Lion");
+         arrayList.remove("Honda");
 
-        for (int i = 0; i < arrayList.size(); i++) {
-            System.out.println("Object is " + arrayList.get(i));
-        }
+         System.out.println("ArrayList "+ arrayList.size());
+
+         if(arrayList.contains("Nissan")) {
+             arrayList.remove("Nissan");
+
+         }
+            else {
+                System.out.println("Nope");
+         }
+        //For each
+//         for (Object ar:arrayList) {
+//            System.out.println("Item " + ar);
+//        }
+//
+//        for (int i = 0; i < arrayList.size(); i++) {
+//            System.out.println("Object is " + arrayList.get(i));
+//        }
 
 
 
