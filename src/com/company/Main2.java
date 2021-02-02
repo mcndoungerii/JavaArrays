@@ -1,6 +1,8 @@
 package com.company;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class Main2 {
     public static void main(String[] args){
@@ -9,6 +11,14 @@ public class Main2 {
         users.put("Adam",31);
         users.put("Sameer",34);
 
-        System.out.println(users.entrySet());
+        Iterator iterator = users.entrySet().iterator();
+
+        while (iterator.hasNext()){
+            Map.Entry pair = (Map.Entry) iterator.next();
+
+            System.out.println("Key : " + pair.getKey() + " ,"+ " Value :" + pair.getValue());
+        }
+
+        //System.out.println(users.entrySet());
     }
 }
